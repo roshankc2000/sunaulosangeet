@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+:root {
+	--primary-color: black;
+	--secondary-color: #faebd7;
+	--text-color: antiquewhite;
+	--secondary-text-color: black;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Ubuntu", sans-serif;
+	display: flex;
+	color: var(--text-color);
+	justify-content: center;
+	align-items: center;
+	min-height: 140vh;
+	width: 100vw;
+	background: var(--secondary-color);
+}
+.flex {
+	display: flex;
+}
+.navbar {
+	height: 70px;
+	width: 100%;
+	background: var(--primary-color);
+	padding: 0 30px;
+	box-sizing: border-box;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: x-large;
+}
+.logo img {
+	height: 50px;
+	width: 50px;
+	padding-right: 10px;
+}
+.nav a {
+	color: var(--text-color);
+	text-decoration: none;
+	font-size: larger;
+	padding: 0 10px;
+}
+
+/* music controler */
+.playlist {
+	margin-top: -50px;
+	height: 100vh;
+	width: 1200px;
+	border-radius: 10px;
+	background: url("images/bg.jpg") center/cover no-repeat;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding-left: 30px;
+	margin-bottom: 30px;
+}
+.caption {
+	font-size: xx-large;
+	margin-bottom: 40px;
+}
+.song {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 6px;
+	margin: 6px 0;
+	width: 500px;
+	border-radius: 20px;
+	background: var(--secondary-color);
+	color: var(--secondary-text-color);
+	cursor: pointer;
+	transition: 0.3s;
+}
+.song:hover {
+	scale: 1.05;
+}
+.songTime {
+	margin-right: 10px;
+}
+.song img {
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+}
+.flex-footer {
+	background-color: var(--primary-color);
+	height: 150px;
+	width: 100vw;
+	position: fixed;
+	bottom: 0px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#myProgressBar {
+	width: 80vw;
+	cursor: pointer;
+}
+.songInfo {
+	font-size: xx-large;
+	font-family: "Varela Round", sans-serif;
+	margin-bottom: 10px;
+}
+#gif-left {
+	margin-right: 60px;
+	width: 200px;
+	height: 35px;
+}
+#gif-right {
+	margin-left: 60px;
+	width: 200px;
+	height: 35px;
+}
+.icon {
+	margin: 0 5px;
+}
+.icon:hover {
+	scale: 1.2;
+	cursor: pointer;
+}
