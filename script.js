@@ -78,27 +78,6 @@ Array.from(songItems).forEach((element) => {
 		}
 	})
 })
-// Array.from(document.getElementsByClassName('gana')).forEach((element) => {
-// 	element.addEventListener('click', () => {
-// 		index = parseInt(element.id);
-// 		audio.src = `songs/${index}.mp3`;
-// 		nowPlaying.innerText = songs[index].songName;
-// 		audio.currentTime = 0;
-// 		if (audio.paused || audio.currentTime <= 0) {
-// 			audio.play();
-// 			pausePlay.classList.remove('fa-play-circle');
-// 			pausePlay.classList.add('fa-pause-circle');
-// 			gifleft.style.opacity = 1;
-// 			gifright.style.opacity = 1;
-// 		} else {
-// 			audio.pause();
-// 			pausePlay.classList.remove('fa-pause-circle');
-// 			pausePlay.classList.add('fa-play-circle');
-// 			gifleft.style.opacity = 0;
-// 			gifright.style.opacity = 0;
-// 		}
-// 	})
-// })
 
 document.getElementById('next').addEventListener('click', () => {
 	index = (index + 1) % 10;
