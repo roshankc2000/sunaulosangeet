@@ -70,7 +70,7 @@ body {
 	font-size: xx-large;
 	margin-bottom: 40px;
 }
-.song {
+.gana{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -83,13 +83,13 @@ body {
 	cursor: pointer;
 	transition: 0.3s;
 }
-.song:hover {
+.gana:hover {
 	scale: 1.05;
 }
 .songTime {
 	margin-right: 10px;
 }
-.song img {
+.gana img {
 	height: 32px;
 	width: 32px;
 	border-radius: 50%;
@@ -117,11 +117,15 @@ body {
 	margin-right: 60px;
 	width: 200px;
 	height: 35px;
+	opacity: 0;
+	transition: opacity 0.8s ease-in;
 }
 #gif-right {
 	margin-left: 60px;
 	width: 200px;
 	height: 35px;
+	opacity: 0;
+	transition: opacity 0.8s ease-in;
 }
 .icon {
 	margin: 0 5px;
